@@ -1,0 +1,55 @@
+{% load static %}
+
+{% if error == "no" %}
+     <script>
+	   alert('Logged In Successfully');
+       window.location=('{% url 'admin_home' %}');
+     </script>
+{% endif %}
+
+{% if error == "yes" %}
+     <script>
+	    alert('Invalid Credentials, Please Try Again');
+     </script>
+{% endif %}
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form</title>
+      <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Admin Login
+            </div>
+            <div class="title signup">
+               Signup Form
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="form-inner">
+               <form method="post" class="login">
+                  {% csrf_token %}
+                  <div class="field">
+                     <input type="text" name="uname" placeholder="Username" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" name="pwd" placeholder="Password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+                  <div class="field">
+                     <center><a href="{% url 'index' %}">Back to Home</a></center>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

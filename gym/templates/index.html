@@ -1,0 +1,192 @@
+{% include 'navbar.html' %}
+{% load static %}
+{% block main %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header>
+<!----Hero Image-->
+<div class="main-title" id="home">
+    <div class="main-text">
+         <h1>Welcome To Gym Management System</h1>
+         <p> Gym Software is a fully featured Fitness club & Gym Management
+             Software designed.Gym Software provides end-to-end solutions designed for Windows.
+             This online Fitness & Gym Management system Add Enquiry,Plan,Equipment and Member.</p>
+             <a href="{% url 'admin_login' %}" class="main-btn">Login</a>
+    </div>
+</div>
+</header>
+ <!--=============End of Header=============-->
+
+<!---About Section-----------=============-->
+   <section class="about" id="about">
+     <div class="about-center section-center">
+           <!--About Info============-->
+           <article class="about-info">
+               <div>
+                 <h2>Welcome to Gym</h2>
+                 <p class="abt-text">Anytime Fitness works closely in association of
+                     various other partner brands to achieve the best mutually benefitted output.
+                     Here is a glimpse of World Health Day event. A special thanks to all the
+                     speakers and brand partners for making the event such a success. </p>
+                 <a href="{% url 'contact' %}" class="about-btn">Enquiry</a>
+               </div>
+           </article>
+
+           <!--End of About Info-===============-->
+           <!---About Image====-->
+           <article class="about-img">
+               <div class="about-img-container">
+               <img src="{% static 'images/gym4.jpg' %}" class="about-img" alt="about"/>
+               </div>
+           </article>
+           <!--End of About Images========-->
+       </div>
+   </section>
+   <!--End of About Section====================-->
+
+   <!--==============Work out section=====================-->
+   <section id="workout">
+      <div class="section-center">
+       <!--title-============-->
+       <div class="work-title">
+           <h3 class="title">Why Work Out here</h3>
+       </div>
+       <!--End of title===================-->
+       <div class="work-center">
+           <!--workout detail-->
+           <article class="service">
+             <i class="fas fa-bolt"></i>
+             <h3>All Trainer Good</h3>
+             <p>“All Trainer and good behaviour wise helping all Time.”</p>
+            </article>
+           <!--End of workout===========-->
+           <!--workout detail-->
+           <article class="service">
+            <i class="fas fa-leaf"></i>
+            <h3>Good training</h3>
+            <p>“Here all Equipment are good. Gym owner are also good person, good trainer.”</p>
+           </article>
+          <!--End of workout===========-->
+          <!--workout detail-->
+          <article class="service">
+            <i class="fas fa-battery-three-quarters"></i>
+            <h3>Core Strength</h3>
+            <p>“Strength does not come from physical capacity. It comes from an indomitable will.”</p>
+           </article>
+          <!--End of workout===========-->
+           <!--workout detail-->
+           <article class="service">
+            <i class="fas fa-smile-beam"></i>
+            <h3>Positivity</h3>
+            <p>“Actually, I just woke up one day and decided I didn’t want to feel…”</p>
+           </article>
+          <!--End of workout===========-->
+        </div>
+       </div>
+   </section>
+
+   <!--=========End of Work out Section===============-->
+ <!--=========Testimonial  Section===============-->
+ <section id="testimonial">
+    <div class="section-center">
+     <!--title-============-->
+     <div>
+        <h3 class="title">Happy Clients</h3>
+    </div>
+    <!--End of title===================-->
+    <div class="client-center">
+        <!--Testimonial Start-->
+        <article class="testimonial">
+            <h3>Abhishek Pandey</h3>
+            <p>“Their trainers are exceptional, the overall vibe is great and I have had nothing but good experiences.
+                I definitely recommend them to my friends and family...”</p>
+        </article>
+        <!--end of Testimonial-->
+        <!--Testimonial Start-->
+        <article class="testimonial">
+            <h3>Sandeep Sharma</h3>
+            <p>“Amazing personal trainers and complete, clean gym. Would highly recommend!..”</p>
+        </article>
+        <!--end of Testimonial-->
+        <!--Testimonial Start-->
+        <article class="testimonial">
+            <h3>Anuj Tawar</h3>
+            <p>“Trainers who really care and go above and beyond to help you achieve your goals.
+                Small and private gym that feels more personal...”</p>
+        </article>
+        <!--end of Testimonial-->
+    </div>
+     </div>
+ </section>
+ <!--==============End of Testimonial Section===========-->
+<!--==============Classes Section===========-->
+<section id="classes">
+    <div class=" section-center">
+     <!--title-============-->
+     <div>
+        <h3 class="title">Our Classes</h3>
+    </div>
+    <!--End of title===================-->
+    <div class="classes-container">
+        <!--Classes-->
+        <article class="class-item">
+            <!--Card-->
+            <div class="img-container">
+                <img src="{% static 'images/gym5.jpg' %}" alt="class1">
+            </div>
+            <div class="text-container">
+                <h4>Weights</h4>
+
+            </div>
+            <!--end of card-->
+        </article>
+        <!--End of classes-->
+        <!--Classes-->
+        <article class="class-item">
+            <!--Card-->
+            <div class="img-container">
+                <img src="{% static 'images/Crossfit.jpg' %}" alt="class1">
+            </div>
+            <div class="text-container">
+                <h4>Crossfit</h4>
+
+            </div>
+            <!--end of card-->
+        </article>
+        <!--End of classes-->
+<!--Classes-->
+<article class="class-item">
+    <!--Card-->
+    <div class="img-container">
+        <img src="{% static 'images/Pilates.jpg' %}" alt="class1">
+    </div>
+    <div class="text-container">
+        <h4>Pilates</h4>
+
+    </div>
+    <!--end of card-->
+</article>
+<!--End of classes-->
+
+    </div>
+    </div>
+</section>
+<!--==============End of Classes Section===========-->
+
+<!---Footer===========-->
+<footer>
+
+</footer>
+<!--=============End of Footer===========-->
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,16 @@
+.navbar-brand{
+ font-family: 'Monotype Corsiva';
+ font-size: 35px;
+ font-weight: bold;
+}
+
+.nav-link{
+ color: black !important;
+ font-size: 20px;
+}
+
+.nav-link:hover{
+  color: green !important;
+  background-color: orange;
+  border-radius: 30px;
+}
